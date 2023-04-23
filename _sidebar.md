@@ -41,7 +41,7 @@
       * [Mysql](pages/torna/other/mysql.md)
       * [第三方登录](pages/torna/other/third-party-login.md)
 * 使用
-  * [代码推送(推荐)](pages/quickstart-code.md)
-  * [文档上传](pages/quickstart-upload.md)
-* [验证](pages/verify.md)
+  * [代码推送(推荐)](quickstart-code.md)
+  * [文档上传](quickstart-upload.md)
+* [验证](verify.md)
 
