@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMC-APIs-DOC</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <!-- 设置浏览器图标 -->
+  <link rel="icon" href="/favicon.ico" src="image/amc-doc-icon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" src="image/amc-doc-icon.svg" />
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> -->
+  <!-- docsify css-->
+  <link rel="stylesheet" href="./node_modules/docsify/themes/vue.css">
+  <!-- 代码高亮的css-->
+
+  <link rel="stylesheet" href="./node_modules/prismjs/themes/prism-tomorrow.css"> 
+</head>
+<body>
+  <div id="app"></div>
+
+  <style type="text/css">.content{overflow: auto;}</style>
+
+  <script>
+    window.$docsify = {
+      el: '#app',
+      // 项目名称
+      name: 'Amc接口工具文档说明',
+      nameLink: 'http://code.jsfund.cn/platform/client/component/amc',
+      // 在侧边栏中出现的网站图标，你可以使用CSS来更改大小
+      // logo: 'image/favicon.png',
+      // 仓库地址，点击右上角的Github章鱼猫头像会跳转到此地址
+      repo: 'http://code.jsfund.cn/platform/client/component/amc',
+      // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
+      loadSidebar: true,
+      // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
+      loadNavbar: false,
+      // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
+      coverpage: true,
+      // 最大支持渲染的标题层级
+      maxLevel: 6,
+      // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
+      subMaxLevel: 4,
+      // 小屏设备下合并导航栏到侧边栏
+      mergeNavbar: true,
+      // 直接渲染其他域名的文档
+      //basePath: 'https://docs.amc.jsfund.cn/',
+      // 入口文件改为 /README.md -> home.md
+      // homepage: 'home.md',
+      // 在找不到指定页面时加载_404.md:
+      notFoundPage: true,
+      auto2top: true,
+      autoHeader: true,
+      executeScript: true,
+      // 访问首页的时候 只展示首页
+      onlyCover: true,
+      // 切换章节
+      pagination: {
+      previousText: '上一章节',
+      // or
+      nextText: {
+        '/': '下一章节',
+      },
+      crossChapter: true,
+      crossChapterText: true,
+      },
+      // 标签
+      tabs: {
+          persist    : true,      // default
+          sync       : true,      // default
+          theme      : 'classic', // default
+          tabComments: true,      // default
+          tabHeadings: true       // default
+      }
+        
+    }
+  </script>
+  <script>
+      // 搜索配置(url：https://docsify.js.org/#/zh-cn/plugins?id=%e5%85%a8%e6%96%87%e6%90%9c%e7%b4%a2-search)
+      window.$docsify = {
+          search: {
+              maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+              paths: auto,// 注意：仅适用于 paths: 'auto' 模式
+              placeholder: '搜索',
+              // 支持本地化
+              placeholder: {
+                  '/zh-cn/': '搜索',
+                  '/': 'Type to search'
+              },
+              noData: '找不到结果',
+              depth: 4,
+              hideOtherSidebarContent: false,
+              namespace: 'AMC APIs Doc',
+          }
+      }
+  </script>
+  <!-- Docsify v4 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify@4"></script> -->
+  <script src="./node_modules/docsify/lib/docsify.js"></script>
+  <!-- docsify的js依赖 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script> -->
+  <script src="./node_modules/docsify/lib/docsify.min.js"></script>
+  <!-- emoji表情支持 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script> -->
+  <script src="./node_modules/docsify/lib/plugins/emoji.min.js"></script>
+  <!-- 图片放大缩小支持 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script> -->
+  <script src="./node_modules/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!-- 搜索功能支持 -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script> -->
+  <script src="./node_modules/docsify/lib/plugins/search.min.js"></script>
+  <!-- MarkDown文档内容 可以转换 执行js脚本 -->
+  <!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script> -->
+  <script src="./node_modules/docsify/lib/plugins/external-script.min.js"></script> 
+
+  <!-- 切换文档章节js -->
+  <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
+  <script src="./node_modules/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <!-- docsify-tabs (latest v1.x.x) -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
+  <script src="./node_modules/docsify-tabs/dist/docsify-tabs.min.js"></script>
+
+  <!-- 侧边栏目录折叠 -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+  <script src="./node_modules/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- 字数统计 -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/docsify-count@latest/dist/countable.min.js"></script>-->
+  <script src="./node_modules/docsify-count/dist/countable.min.js"></script>
+  <!-- 页面右侧 TOC -->
+  <!--<script src="https://cdn.jsdelivr.net/npm/docsify-plugin-toc@1.1.0/dist/docsify-plugin-toc.min.js"></script>-->
+  <script src="./node_modules/docsify-plugin-toc/dist/docsify-plugin-toc.min.js"></script>
+
+  <!-- 语法高亮 -->
+  <script src="./node_modules/prismjs/components/prism.js"></script>
+  <script src="./node_modules/prismjs/components/components.js"></script>
+
+  <script src="./node_modules/prismjs/components/prism-bash.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-java.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-markdown.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-http.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-javadoc.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-javascript.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-json.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-json5.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-log.min.js"></script>
+  <script src="./node_modules/prismjs/components/prism-properties.min.js"></script>
+  <!-- 在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+  <!--<script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>-->
+  <script src="./node_modules/docsify-copy-code/dist/docsify-copy-code.min.js"></script> 
+
+
+</body>
+
+</html>

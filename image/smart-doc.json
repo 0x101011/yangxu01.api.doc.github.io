@@ -1,0 +1,17 @@
+{
+  "allInOne": true,
+  "allInOneDocFileName":"index.html",
+  "outPath": "./src/main/resources/static/doc",  
+  "coverOld": true,
+  "createDebugPage": true,
+  "style":"xt256",
+  "showAuthor":true,
+  "requestFieldToUnderline":true,
+  "responseFieldToUnderline":true,
+  "displayActualType":true,
+  "appToken": "3245e45cd29f4ef8a1f43a2126c47d9d", --这里是第一步获取文档内的Token -请替换成您的Token
+  "isReplace":true,
+  "openUrl": "http://10.0.192.237:7700/api",	    --嘉实测试环境文档推送接口地址  -请不要改动此项参数
+  "debugEnvName":"shop-web测试环境",
+  "debugEnvUrl":"http://10.0.192.184:7080"        --这里是我shop-web服务测试环境的服务地址 -请替换成您的测试环境
+}
